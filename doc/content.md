@@ -1,5 +1,19 @@
 # Contents
 
+## getList
+
+```javascript
+try {
+  const query = {
+    page: 1,
+  };
+  const response = await zott.contents.getList(query);
+  console.log(response);
+} catch (error) {
+  console.log(error);
+}
+```
+
 ## get
 
 ```javascript
