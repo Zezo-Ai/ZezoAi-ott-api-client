@@ -14,6 +14,7 @@ import {
   ICreateContentSeasonResponse,
   ICreateImageSize,
   IDeleteContentImage,
+  IGetContentQuery,
   IGetManageContentQueryPayload,
   IGetSeasonManageQueryPayload,
   IImageSize,
@@ -33,6 +34,29 @@ import { filterNonNull } from "../../../utils";
 class ContentService extends BaseService {
   constructor(options: IOptions) {
     super(options);
+  }
+
+  /**
+   * Retrieves a list of contents.
+   *
+   * @param query Optional query parameters to filter the results.
+   * The available query parameters are:
+   * - `page`: The page number to retrieve.
+   * - `limit`: The number of items to retrieve per page.
+   * - `order`: The order to sort the results by. The available values are `asc` and `desc`.
+   * - `fields`: An array of column names to include in the results.
+   * - `q`: A search query to filter the results by.
+   * - `filters`: An object of filter values to filter the results by.
+   * - `populate`: An array of populate options to include associated data in the results.
+   * @returns A promise that resolves to the server's response containing the list of contents.
+   */
+  async getList(
+    query?: IGetContentQuery
+  ): Promise<AxiosResponse<IPaginatedResponse<IContentData>>> {
+    return this.request({
+      method: "GET",
+      url: `/api/v1/content?${qs.stringify(filterNonNull(query || {}))}`,
+    });
   }
 
   /**

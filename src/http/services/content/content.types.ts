@@ -1,4 +1,5 @@
 import { IPopulate } from "../../../types";
+import { IPopulateV1 } from "../sections/sections.types";
 
 export interface IContentlanguage {
   _id: string;
@@ -411,4 +412,17 @@ export interface IImageSize {
   height: number;
   createdAt: Date;
   updatedAt: Date;
+}
+
+export interface IGetContentQuery {
+  page?: number;
+  limit?: number;
+  order?: "asc" | "desc";
+  sortBy?: string;
+  id?: string;
+  q?: string;
+  slug?: string;
+  select?: string;
+  filters?: object;
+  populate?: IPopulateV1[];
 }

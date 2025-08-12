@@ -69,8 +69,14 @@ main();
    1. [init](doc/auth.methods.md#init)
    1. [update](doc/auth.methods.md#update)
 
-1. [Blogs](doc/blog.md#CategBlogsories)
+1. [Blogs](doc/blog.md#Blogs)
 
+   1. [create](doc/blog.md#create)
+   1. [update](doc/blog.md#update)
+   1. [action](doc/blog.md#action)
+   1. [delete](doc/blog.md#delete)
+   1. [getList](doc/blog.md#getList)
+   1. [getManage](doc/blog.md#getManage)
    1. [get](doc/blog.md#get)
 
 1. [Categories](doc/categories.md#Categories)
@@ -85,6 +91,7 @@ main();
 
 1. [Contents](doc/content.md#Contents)
 
+   1. [getList](doc/content.md#getList)
    1. [create](doc/content.md#create)
    1. [getManage](doc/content.md#getManage)
    1. [actions](doc/content.md#actions)
