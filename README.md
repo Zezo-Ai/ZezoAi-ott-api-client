@@ -164,8 +164,9 @@ main();
 
    1. [init](doc/countries.md#init)
    1. [create](doc/countries.md#create)
-   1. [get](doc/countries.md#get)
    1. [delete](doc/countries.md#delete)
+   1. [get](doc/countries.md#get)
+   1. [getManage](doc/countries.md#getManage)
 
 1. [Users](doc/user.md#Users)
 

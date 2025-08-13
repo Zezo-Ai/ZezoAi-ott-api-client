@@ -27,21 +27,6 @@ try {
 }
 ```
 
-## get
-
-```javascript
-try {
-  const query = qs.stringify({
-    page: 1,
-    limit: 10,
-  });
-  const response = await zott.countries.get(query);
-  console.log(response);
-} catch (error) {
-  console.log(error);
-}
-```
-
 ## delete
 
 ```javascript
@@ -50,6 +35,36 @@ try {
     id: ["id1", "id2"],
   };
   const response = await zott.countries.delete(payload);
+  console.log(response);
+} catch (error) {
+  console.log(error);
+}
+```
+
+## get
+
+```javascript
+try {
+  const query = {
+    page: 1,
+    limit: 10,
+  };
+  const response = await zott.countries.get(query);
+  console.log(response);
+} catch (error) {
+  console.log(error);
+}
+```
+
+## getManage
+
+```javascript
+try {
+  const query = {
+    page: 1,
+    limit: 10,
+  };
+  const response = await zott.countries.getManage(query);
   console.log(response);
 } catch (error) {
   console.log(error);
