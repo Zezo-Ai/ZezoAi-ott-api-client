@@ -8,6 +8,7 @@ import {
   IUploadFinalize,
   IUploadGetUrls,
   IUploadGetUrlsResponse,
+  IUploadResponse,
 } from "./upload.types";
 class UploadService extends BaseService {
   constructor(options: IOptions) {
@@ -60,6 +61,24 @@ class UploadService extends BaseService {
       method: "POST",
       url: "/api/v1/upload/finalize",
       data: payload,
+    });
+  }
+
+  /**
+   * Uploads a file directly to the server.
+   *
+   * @param payload A FormData object containing the file to upload. field name should be `file`.
+   * Pass folder name as `folder` field if uploading to a specific folder.
+   * @returns A promise that resolves to the server's response containing the upload details.
+   */
+  async uploadFile(payload: FormData): Promise<AxiosResponse<IUploadResponse>> {
+    return this.request({
+      method: "POST",
+      url: "/api/v1/upload",
+      data: payload,
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
     });
   }
 }

@@ -1,3 +1,11 @@
+#### v0.1.7
+
+#### Added
+
+- feat: add new APIs for Ads, Coupon, and Partner services; update README and change logs
+
+---
+
 #### v0.1.6
 
 #### Added

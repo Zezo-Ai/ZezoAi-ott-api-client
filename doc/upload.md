@@ -41,3 +41,17 @@ try {
   console.log(error);
 }
 ```
+
+## uploadFile
+
+```javascript
+try {
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("folder", campaignId);
+  const response = await zott.upload.uploadFile(formData);
+  console.log(response);
+} catch (error) {
+  console.log(error);
+}
+```

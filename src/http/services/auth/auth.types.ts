@@ -57,6 +57,7 @@ export interface IWhoami {
   avatar: string | null;
   sessions?: object[];
   isSubscribed: boolean;
+  balance?: number;
   subscription: {
     subscriptionId: string;
     subscriptionDetails: {
