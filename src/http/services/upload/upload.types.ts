@@ -44,3 +44,8 @@ export interface IFinalizeResponse {
   type: string;
   url?: string;
 }
+
+export interface IUploadResponse {
+  key: string;
+  finalURL: string;
+}

@@ -164,8 +164,9 @@ main();
 
    1. [init](doc/countries.md#init)
    1. [create](doc/countries.md#create)
-   1. [get](doc/countries.md#get)
    1. [delete](doc/countries.md#delete)
+   1. [get](doc/countries.md#get)
+   1. [getManage](doc/countries.md#getManage)
 
 1. [Users](doc/user.md#Users)
 
@@ -236,6 +237,7 @@ main();
    1. [init](doc/upload.md#init)
    1. [getUrls](doc/upload.md#getUrls)
    1. [finalize](doc/upload.md#finalize)
+   1. [uploadFile](doc/upload.md#uploadFile)
 
 1. [Genres](doc/genres.md#Genres)
 
@@ -286,6 +288,35 @@ main();
    1. [initTheme](doc/app.settings.md#initTheme)
    1. [getThemeManage](doc/app.settings.md#getThemeManage)
    1. [getThemes](doc/app.settings.md#getThemes)
+
+1. [Coupon](doc/coupon.md#Coupon)
+
+   1. [create](doc/coupon.md#create)
+   1. [update](doc/coupon.md#update)
+   1. [delete](doc/coupon.md#delete)
+   1. [action](doc/coupon.md#action)
+   1. [getManage](doc/coupon.md#getManage)
+
+1. [Ads](doc/ads.md#Ads)
+
+   1. [createCampaign](doc/ads.md#createCampaign)
+   1. [updateCampaign](doc/ads.md#updateCampaign)
+   1. [deleteCampaign](doc/ads.md#deleteCampaign)
+   1. [actionsOnCampaign](doc/ads.md#actionsOnCampaign)
+   1. [getListCampaigns](doc/ads.md#getListCampaigns)
+   1. [getAds](doc/ads.md#getAds)
+   1. [generateAd](doc/ads.md#generateAd)
+
+1. [Partner](doc/partner.md#Partner)
+
+   1. [getRevenueSettings](doc/partner.md#getRevenueSettings)
+   1. [updateRevenueSettings](doc/partner.md#updateRevenueSettings)
+   1. [addAccountDetails](doc/partner.md#addAccountDetails)
+   1. [updateAccountDetails](doc/partner.md#updateAccountDetails)
+   1. [getAccountDetails](doc/partner.md#getAccountDetails)
+   1. [createRevenueRequest](doc/partner.md#createRevenueRequest)
+   1. [updateRevenueRequest](doc/partner.md#updateRevenueRequest)
+   1. [getRevenueRequests](doc/partner.md#getRevenueRequests)
 
 ## Contributors
 
